@@ -1,5 +1,3 @@
-
-
 public class Nodo<T>{
     
     T info;
@@ -32,15 +30,16 @@ public class Nodo<T>{
         if (this.n==n) {
             return this.info;
         }else{
-            this.buscar(n);
+            return this.buscar(n);
         }
     }
     public String buscar(String n) {
         if (this.info.equals(n)) {
             return this.info.toString();
         }else{
-            this.buscar(n);
+            return this.buscar(n);
         }
     
+}
 }
 
