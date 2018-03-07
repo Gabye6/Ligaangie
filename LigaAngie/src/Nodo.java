@@ -1,3 +1,5 @@
+
+
 public class Nodo<T>{
     
     T info;
@@ -26,11 +28,19 @@ public class Nodo<T>{
             return null;
         }
     }
-    public void buscar(int n) {
+    public T buscar(int n) {
+        if (this.n==n) {
+            return this.info;
+        }else{
+            this.buscar(n);
         }
-       public void swap(T info) {
-} 
+    }
+    public String buscar(String n) {
+        if (this.info.equals(n)) {
+            return this.info.toString();
+        }else{
+            this.buscar(n);
+        }
+    
 }
-
-
 
